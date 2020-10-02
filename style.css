@@ -1,6 +1,11 @@
+html
+{
+	scroll-behavior: smooth;
+}
 body
 {
 	margin: 0;
+	background-color:red;
 }
 
 .nav 
@@ -8,9 +13,8 @@ body
 	/*background-color: #6C7B8B; essa cor n é melhor visse*/
 	background-color:#333;
 	position:fixed;
-	overflow: hidden;
 	width:100%;
- 	z-index:1;
+	clear:both;
 }
 
 /* Style the links inside the navigation bar */
@@ -51,11 +55,23 @@ body
 	display: none;
 }
 
+#center
+{
+	text-align:center;
+	background-image: url(jo.jpg);
+	height:792px;
+	width:100%;
+	margin-top:-16px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 /*functions*/
 
 /*quando a tela for <= 600px, esconda todos os links, exceto bem-vindo,
 e mostre o link que contém o hamburguer(.icon)*/
-@media screen and (max-width: 700px)
+@media screen and (max-width: 750px)
 {
 	.nav a:not(:first-child) {display:none}
 	.nav a.icon 
@@ -67,7 +83,32 @@ e mostre o link que contém o hamburguer(.icon)*/
 
 /*adiviona a classe "responsive" pro nav com javascript quando a pessoa
 clica no icone;mostra os link um em cima do outro e n horizontal */
-@media screen and (max-width: 700px)
+
+@media screen and (max-width: 1067px)
+{
+	.navindo
+	{
+		margin-left:0%;
+	}
+	.image
+	{
+		padding-top: 2%;
+	}
+}
+
+@media screen and (max-width: 920px)
+{
+	.nav a
+	{
+		padding: 14px 34px;
+	}
+	.image
+	{
+		padding-top: 3%;
+	}
+}
+
+@media screen and (max-width: 750px)
 {
 	.nav.responsive {position: relative;}
 	.nav.responsive a.icon {
@@ -80,5 +121,9 @@ clica no icone;mostra os link um em cima do outro e n horizontal */
 		float: none;
 		display: block;
 	    text-align: left;
+	}
+	.image
+	{
+		padding-top: 4%;
 	}
 }
