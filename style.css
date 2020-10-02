@@ -1,20 +1,63 @@
-html
-{
-	scroll-behavior: smooth;
-}
 body
 {
-	margin: 0;
-	background-color:red;
+	margin: 0;background-color:#353537
 }
 
-.nav 
+.test{
+animation: loading 80s linear infinite;
+}
+.test1{
+animation: loading 76s linear infinite;
+}
+.test2{
+animation: loading 83s linear infinite;
+}
+.test3{
+animation: loading 80s linear infinite;
+}
+.test4{
+animation: loading 76s linear infinite;
+}
+.test5{
+animation: loading 73s linear infinite;
+}
+.test6{
+animation: loading 70s linear infinite;
+}
+.test7{
+animation: loading 66s linear infinite;
+}
+.test8{
+animation: loading 63s linear infinite;
+}
+.test9{
+animation: loading 60s linear infinite;
+}
+.test10{
+animation: loading 56s linear infinite;
+}
+
+.PET1{
+	position: absolute;
+	top:165px;
+}
+@keyframes loading {
+0%{
+	transform: rotate(0);
+}
+100%{
+	transform: rotate(360deg);
+}
+}
+
+.nav
 {
 	/*background-color: #6C7B8B; essa cor n é melhor visse*/
 	background-color:#333;
 	position:fixed;
+	overflow: hidden;
 	width:100%;
-	clear:both;
+ 	z-index:1;
 }
 
 /* Style the links inside the navigation bar */
@@ -23,7 +66,7 @@ body
 	margin-left:14%;
 }
 
-.nav a 
+.nav a
 {
 	float: left;
 	display: block;
@@ -35,7 +78,7 @@ body
 }
 
 /* Change the color of links on hover */
-.nav a:hover 
+.nav a:hover
 {
 	background-color: #ddd;
 	color:black;
@@ -43,38 +86,26 @@ body
 }
 
 /* Add an active class to highlight the current page
-.nav a.active 
+.nav a.active
 {
 	background-color: #4CAF50;
 	color: white;
 }*/
 
 /* Hide the link that should open and close the topnav on small screens */
-.nav .icon 
+.nav .icon
 {
 	display: none;
-}
-
-#center
-{
-	text-align:center;
-	background-image: url(jo.jpg);
-	height:792px;
-	width:100%;
-	margin-top:-16px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 /*functions*/
 
 /*quando a tela for <= 600px, esconda todos os links, exceto bem-vindo,
 e mostre o link que contém o hamburguer(.icon)*/
-@media screen and (max-width: 750px)
+@media screen and (max-width: 700px)
 {
 	.nav a:not(:first-child) {display:none}
-	.nav a.icon 
+	.nav a.icon
 	{
 		float:right;
 		display:block;
@@ -83,47 +114,18 @@ e mostre o link que contém o hamburguer(.icon)*/
 
 /*adiviona a classe "responsive" pro nav com javascript quando a pessoa
 clica no icone;mostra os link um em cima do outro e n horizontal */
-
-@media screen and (max-width: 1067px)
+@media screen and (max-width: 700px)
 {
-	.navindo
-	{
-		margin-left:0%;
-	}
-	.image
-	{
-		padding-top: 2%;
-	}
-}
-
-@media screen and (max-width: 920px)
-{
-	.nav a
-	{
-		padding: 14px 34px;
-	}
-	.image
-	{
-		padding-top: 3%;
-	}
-}
-
-@media screen and (max-width: 750px)
-{
-	.nav.responsive {position: fixed;}
+	.nav.responsive {position: relative;}
 	.nav.responsive a.icon {
 		position: absolute;
 		right: 0;
 	    top: 0;
 	}
-	.nav.responsive a 
+	.nav.responsive a
 	{
 		float: none;
 		display: block;
 	    text-align: left;
-	}
-	.image
-	{
-		padding-top: 4%;
 	}
 }
