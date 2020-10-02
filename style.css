@@ -27,6 +27,7 @@ body
 	padding: 14px 50px;
 	text-decoration: none;
 	font-size: 17px;
+	text-transform: uppercase;
 }
 
 /* Change the color of links on hover */
