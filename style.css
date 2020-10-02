@@ -110,7 +110,7 @@ clica no icone;mostra os link um em cima do outro e n horizontal */
 
 @media screen and (max-width: 750px)
 {
-	.nav.responsive {position: relative;}
+	.nav.responsive {position: fixed;}
 	.nav.responsive a.icon {
 		position: absolute;
 		right: 0;
