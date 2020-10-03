@@ -1,40 +1,43 @@
+
 body
 {
-	margin: 0;background-color:#353537
+	margin: 0;background-color:#343233
 }
 
 .test{
-animation: loading 80s linear infinite;
+animation: loading 115s linear infinite;
 }
 .test1{
-animation: loading 76s linear infinite;
+animation: loading 120s linear infinite;
 }
 .test2{
-animation: loading 83s linear infinite;
+animation: loading 105s linear infinite;
 }
 .test3{
-animation: loading 80s linear infinite;
+animation: loading 110s linear infinite;
 }
 .test4{
-animation: loading 76s linear infinite;
+animation: loading 65s linear infinite;
 }
 .test5{
-animation: loading 73s linear infinite;
+animation: loading 85s linear infinite;
 }
 .test6{
 animation: loading 70s linear infinite;
 }
 .test7{
-animation: loading 66s linear infinite;
+animation: loading 75s linear infinite;
 }
 .test8{
-animation: loading 63s linear infinite;
+animation: loading 95s linear infinite;
+position: absolute;
+top:268px;
 }
 .test9{
-animation: loading 60s linear infinite;
+animation: loading 80s linear infinite;
 }
 .test10{
-animation: loading 56s linear infinite;
+animation: loading 90s linear infinite;
 }
 
 .PET1{
@@ -128,4 +131,17 @@ clica no icone;mostra os link um em cima do outro e n horizontal */
 		display: block;
 	    text-align: left;
 	}
+}
+.cursos{
+font-style: normal;
+font-variant-ligatures: normal;
+font-variant-caps: normal;
+font-variant-numeric: normal;
+font-variant-east-asian: normal;
+font-weight: 300;
+font-stretch: normal;
+font-size: 18px;
+line-height: 1.5;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
 }
